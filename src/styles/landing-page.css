@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes skillup-fall-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes skillup-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes skillup-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes skillup-pulse-slow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes skillup-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes skillup-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.skillup-animate-fall-in {
+  animation: skillup-fall-in 1s ease-out;
+}
+
+.skillup-animate-fade-in {
+  animation: skillup-fade-in 1s ease-out;
+}
+
+.skillup-animate-slide-up {
+  animation: skillup-slide-up 1s ease-out;
+}
+
+.skillup-animate-pulse-slow {
+  animation: skillup-pulse-slow 3s infinite;
+}
+
+.skillup-animate-float {
+  animation: skillup-float 3s ease-in-out infinite;
+}
+
+.skillup-animate-rotate {
+  animation: skillup-rotate 10s linear infinite;
+}
+
+.skillup-animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.skillup-animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.skillup-animation-delay-600 {
+  animation-delay: 600ms;
+}
